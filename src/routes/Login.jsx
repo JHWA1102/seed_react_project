@@ -53,16 +53,16 @@ const Login = ({setToken}) => {
 
     return(
         <form onSubmit={handleSubmit}>
+            <img src={`${process.env.PUBLIC_URL}/assets/img4.png`} style={{width: "200px", height: "100px", display: "block", margin: "20px auto 0px auto"}} />
             <label>
-                <p>Username</p>
-                <input type="text" onChange={e => setUserName(e.target.value)} />
+                <input className="login_input_box" type="text" onChange={e => setUserName(e.target.value)} placeholder="아이디를 입력해주세요."/>
             </label>
             <label>
-                <p>Password</p>
-                <input type="password" onChange={e => setPassword(e.target.value)} />
+                <br></br>
+                <input className="login_input_box" type="password"  onChange={e => setPassword(e.target.value)} placeholder="비밀번호를 입력해주세요." />
             </label>
             <div>
-                <button type="submit">Submit</button>
+                <button type="submit" style={{display: "block", width: "100%", height: "30px", textAlign: "center", marginTop: "10px"}}>로그인</button>
             </div>
         </form>
     );
