@@ -9,7 +9,7 @@ export const menuItemsData = [
         submenu: [
             {
                 title: "인사말",
-                url: "/Greetings",
+                url: "/intro/greetings",
             },
             // 2024.03.19 SJH) If I use below code, I can make sub-menu.  
             // {
@@ -37,7 +37,7 @@ export const menuItemsData = [
             // },
             {
                 title: "교육 철학",
-                url: "seo",
+                url: "/intro/philosophy",
             },
             {
                 title: "교육 현장",

@@ -4,11 +4,12 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Greetings from './routes/Greetings';
+import Greetings from './routes/introduction/Greetings';
 import Root from './routes/root';
 import ErrorPage from './error-page';
 import Services from "./routes/services"
 import Login from "./routes/Login"
+import Philosophy from './routes/introduction/Philosophy';
 
 const router = createBrowserRouter([
   {
@@ -24,17 +25,17 @@ const router = createBrowserRouter([
         element: <Services />,
       },
       {
-        path: "greetings",
+        path: "intro/greetings",
         element: <Greetings />,
       },
       {
         path: "login",
         element: <Login />,
       },
-      // {
-      //   path: "web-design",
-      //   element: <WebDesign />,
-      // },
+      {
+        path: "intro/philosophy",
+        element: <Philosophy />,
+      },
       // {
       //   path: "frontend",
       //   element: <Frontend />,

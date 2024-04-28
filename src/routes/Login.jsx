@@ -26,7 +26,7 @@ const Login = ({setToken}) => {
     async function loginUser(credentials) {
         console.log(credentials);
         try {
-            const response = await axios.post('http://localhost:8080/login', credentials, {
+            const response = await axios.post('http://localhost:3000/members/sign-up', credentials, {
                 headers: {
                     'Content-Type': 'application/json'
                 }
@@ -45,11 +45,29 @@ const Login = ({setToken}) => {
             username,
             password
         });
-        console.log(token);
-        console.log("통과!")
         setToken(token);
-        console.log("통과2!")
+
+        console.log("통과!");
+
+        const handleSubmit = async e => {
+            e.preventDefault();
+            const token = await loginUser({
+                username,
+                password
+            });
+            setToken(token);
+        }
     }
+
+    // 원본
+    // const handleSubmit = async e => {
+    //     e.preventDefault();
+    //     const token = await loginUser({
+    //         username,
+    //         password
+    //     });
+    //     setToken(token);
+    // }
 
     return(
         <form onSubmit={handleSubmit}>
@@ -62,7 +80,7 @@ const Login = ({setToken}) => {
                 <input className="login_input_box" type="password"  onChange={e => setPassword(e.target.value)} placeholder="비밀번호를 입력해주세요." />
             </label>
             <div>
-                <button type="submit" style={{display: "block", width: "100%", height: "30px", textAlign: "center", marginTop: "10px"}}>로그인</button>
+                <button type="submit" style={{display: "block", width: "100%", height: "30px", textAlign: "center", marginTop: "10px"}}>회원가입</button>
             </div>
         </form>
     );

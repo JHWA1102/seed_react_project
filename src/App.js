@@ -6,8 +6,8 @@ function App() {
 
   return (
     <div>
-      <img src={`${process.env.PUBLIC_URL}/assets/img1.png`} />
-      <img src={`${process.env.PUBLIC_URL}/assets/img2.png`} />
+      <img src={`${process.env.PUBLIC_URL}/assets/img1.png`} style={{height: "300px", width: "1200px"}} />
+      <img src={`${process.env.PUBLIC_URL}/assets/img2.png`} style={{height: "300px", width: "1200px"}} />
     </div>
   );
 }
