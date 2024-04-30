@@ -10,6 +10,12 @@ import ErrorPage from './error-page';
 import Services from "./routes/services"
 import Login from "./routes/Login"
 import Philosophy from './routes/introduction/Philosophy';
+import Location from './routes/introduction/Location';
+import Introduce from './routes/program/Introduce';
+import CoachBase from './routes/program/CoachBase';
+import CoachBasic from './routes/program/CoachBasic';
+import CoachAdvanced from './routes/program/CoachAdvanced';
+import CoachFocus from './routes/program/CoachFocus';
 
 const router = createBrowserRouter([
   {
@@ -36,22 +42,30 @@ const router = createBrowserRouter([
         path: "intro/philosophy",
         element: <Philosophy />,
       },
-      // {
-      //   path: "frontend",
-      //   element: <Frontend />,
-      // },
-      // {
-      //   path: "node",
-      //   element: <NodeJs />,
-      // },
-      // {
-      //   path: "php",
-      //   element: <Php />,
-      // },
-      // {
-      //   path: "seo",
-      //   element: <SEO />,
-      // },
+      {
+        path: "intro/location",
+        element: <Location />,
+      },
+      {
+        path: "program/introduce",
+        element: <Introduce />,
+      },
+      {
+        path: "program/coachBase",
+        element: <CoachBase />,
+      },
+      {
+        path: "program/coachBasic",
+        element: <CoachBasic />,
+      },
+      {
+        path: "program/coachAdvanced",
+        element: <CoachAdvanced />,
+      },
+      {
+        path: "program/coachFocus",
+        element: <CoachFocus />,
+      },
     ],
   },
 ]);

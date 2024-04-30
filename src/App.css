@@ -377,3 +377,45 @@ header {
   font-size: 14px;
   line-height: 1.5;
 }
+
+.location-box section {
+  background-color: #EAEAEA;
+  font-weight: bold;
+  font-size: 23px;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.introduce-box section {
+  background-color: #EAEAEA;
+  font-weight: bold;
+  font-size: 23px;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.section_under_style {
+  font-size: 14px;
+  font-weight: 100;
+  margin: 5px 0px 0px 20px;
+  text-align: left;
+}
+
+.introduce-box li {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.introduce-box p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.introduce-box-button {
+  width: 450px;
+  margin: 20px 20px;
+  height: 35px;
+  background-color: #323232;
+  color: white;
+  border-radius: 3px;
+}

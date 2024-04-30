@@ -41,7 +41,7 @@ export const menuItemsData = [
             },
             {
                 title: "교육 현장",
-                url: "seo",
+                url: "/intro/location",
             }
         ],
     },
@@ -51,23 +51,23 @@ export const menuItemsData = [
         submenu: [
             {
                 title: "프로그램 소개",
-                url: "web-design",
+                url: "/program/introduce",
             },
             {
                 title: "학습코칭 기초과정",
-                url: "seo",
+                url: "/program/coachBase",
             },
             {
                 title: "학습코칭 기본과정",
-                url: "seo",
+                url: "/program/coachBasic",
             },
             {
                 title: "학습코칭 심화과정",
-                url: "seo",
+                url: "/program/coachAdvanced",
             },
             {
                 title: "학습코칭 집중과정",
-                url: "seo",
+                url: "/program/coachFocus",
             },
             {
                 title: "진로학업설계 지원교육",
