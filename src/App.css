@@ -419,3 +419,16 @@ header {
   color: white;
   border-radius: 3px;
 }
+
+.custom_number_list {
+  list-style: none;
+}
+
+.bracket_number_list {
+  counter-reset: number 1;
+}
+
+.bracket_numbe_item::before {
+  counter-increment: 1;
+  content: '(' counter(number) ') ';
+}
