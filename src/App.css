@@ -420,15 +420,25 @@ header {
   border-radius: 3px;
 }
 
-.custom_number_list {
+.coachBase-list {
   list-style: none;
 }
 
-.bracket_number_list {
-  counter-reset: number 1;
+.coachBase-list-sub1 {
+  margin: 50px 0px 10px 5px;
+  font-weight: bold;
 }
 
-.bracket_numbe_item::before {
-  counter-increment: 1;
-  content: '(' counter(number) ') ';
+.coachBase-list-sub2 {
+  list-style-type: square;
+  margin: 0px 0px 5px 10px;
+}
+
+.coachBase-list-sub3 {
+  margin: 10px 0px 10px 5px;
+  font-weight: bold;
+}
+
+.coachBase-list-sub4 {
+  margin: 10px 0px 10px 5px;
 }
